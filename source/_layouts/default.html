@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+  {% include head.html %}
+
+  <body class="{% if page.bodyclasses %}{{ page.bodyclasses }}{% endif %} pagelang-{{ page.lang }}">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% include header.html %}
+        {{ content }}
+    {% include footer.html %}
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/owl/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/js/magnificpopup.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+
+  </body>
+
+</html>
